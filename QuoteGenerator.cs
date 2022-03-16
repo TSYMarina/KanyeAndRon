@@ -17,7 +17,7 @@ namespace KanyeAndRon
             var kanyesResponse = client.GetStringAsync(kanyesURL).Result;
             var kanyesQuote = JObject.Parse(kanyesResponse).GetValue("quote").ToString();
 
-            Console.WriteLine($"\nKanye says:\n   { kanyesQuote}.");
+            Console.WriteLine($"\nKanye says:\n   { kanyesQuote}");
         }
 
         public static void RonQuote()
